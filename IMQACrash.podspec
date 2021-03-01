@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description      = 'This Framework is Crash Report SDK for iOS by IMQA'
 
   s.homepage         = 'http://imqa.io/'
-  s.license          = { :type => 'Commercial', :file => 'LICENSE' }
+  s.license          = { :type => 'Commercial', :file => 'IMQACrash.xcframework/ios-arm64_armv7/IMQACrash.framework/LICENSE' }
   s.author           = { 'Onycom, Inc.' => 'support@imqa.io' }
   s.source           = { :http  => "https://github.com/onycom-imqa/IMQA-Crash-Release/releases/download/v#{s.version}/IMQACrash.zip" }
 

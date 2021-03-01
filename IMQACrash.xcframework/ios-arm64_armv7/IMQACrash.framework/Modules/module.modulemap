@@ -1,0 +1,6 @@
+framework module IMQACrash {
+  umbrella header "IMQACrash.h"
+
+  export *
+  module * { export * }
+}

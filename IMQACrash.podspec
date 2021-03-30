@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IMQACrash'
-  version            = '3.0.10'
+  version            = 'IMQAVERSION'
   s.version          = version
   s.summary          = 'Crash Report SDK for iOS by IMQA'
 
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Onycom, Inc.' => 'support@imqa.io' }
   s.source           = { :http  => "https://github.com/onycom-imqa/IMQA-Crash-Release/releases/download/v#{s.version}/IMQACrash.zip" }
 
-  s.ios.deployment_target = '9.3'
+  s.ios.deployment_target = '9.0'
 
   s.xcconfig     =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/IMQACrash/"' }
 

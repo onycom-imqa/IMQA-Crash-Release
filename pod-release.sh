@@ -9,4 +9,4 @@ CURRENT_DIR=$(pwd)
 
 cd ~/.cocoapods/repo/IMQA-Specs
 
-pod repo push --allow-warnings IMQA-Specs $CURRENT_DIR/IMQACrash.podspec
+pod repo push --allow-warnings IMQA-Specs $CURRENT_DIR/IMQACrashAgent.podspec

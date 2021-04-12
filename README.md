@@ -106,7 +106,7 @@ IMQACrash.notifyError(custom_error)
 
 향후 아래와 같은 기능이 추가 될 예정입니다. 구체적인 일정은 정해진 것이 없으며, 업데이트 소식은 blog.imqa.io 에서 확인 하실 수 있습니다. 
 
-**IMQA Crash for iOS Roadmap** 
+### IMQA Crash for iOS Roadmap
 1. Custom Logging  
 2. Application Not Reponse (10sec) (Custom time) 
 3. Out Of Memory Crash 

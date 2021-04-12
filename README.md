@@ -42,6 +42,18 @@ pod 'IMQACrashAgent', '~> 3.1.0'
 ### Objective-C 
 
 ```Objectivec
+
+#import <IMQACrashAgent/IMQACrash.h>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+  NSString* PROJECT_KEY = @"<PROJECT_KEY>";
+  IMQACrashConfiguration* crashConfig = [[IMQACrashConfiguration alloc] initWithApiKey:PROJECT_KEY];
+  [IMQACrash startWithConfiguration:crashConfig];
+  
+  return YES; 
+}
+
 ```
 
 ### Swift 

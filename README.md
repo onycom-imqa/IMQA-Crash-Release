@@ -10,7 +10,7 @@ IMQA Crash 을 iOS 프로젝트에 추가하면, Objective-C 및 Swift 로 개�
 * iOS XX 이상 
 * Xcode XX 이상 
 
-</br>
+---
 
 ## 1. 프레임워크 설치 
 

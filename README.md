@@ -59,11 +59,23 @@ IMQA 솔루션이 기업 내 설치형 서버로 구축되어 있는 경우, 데
 ### Objective-C 
 
 ```Objectivec
+NSString* imqaUrl = @"https://custom-url";
+IMQACrashConfiguration* crashConfig = [[IMQACrashConfiguration alloc] initWithApiKey:PROJECT_KEY];
+
+IMQACrashEndpointConfiguration* endpoint = [[IMQACrashEndpointConfiguration alloc] init]; 
+endpoint.notify = imqaUrl + @"/cocoa/crash/send";
+endpoint.sessions = imqaUrl + @"/cocoa/session"; 
+crashConfig.endpoints = endpoint;
 ```
 
 ### Swift 
 
 ```swift 
+let imqaUrl = "https://custom-url"
+let crashConfig = IMQACrashConfiguration("<PROJECT_KEY>")
+crashConfig.endpoints = IMQACrashEndpointConfiguration(
+                                 notify: imqaUrl + "/cocoa/crash/send",
+                                 sessions: imqaUrl + "/cocoa/session")
 ```
 
 </br>

@@ -71,8 +71,8 @@ pod 'IMQACrashAgent', '~> 3.1.0'
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
     let PROJECT_KEY = ""
-    let config = IMQACrashConfiguration(PROJECT_KEY)
-    IMQACrash.start(with: config)
+    let crashConfig = IMQACrashConfiguration(PROJECT_KEY)
+    IMQACrash.start(with: crashConfig)
     
     return true
 }

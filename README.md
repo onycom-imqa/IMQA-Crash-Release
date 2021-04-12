@@ -87,11 +87,19 @@ crashConfig.endpoints = IMQACrashEndpointConfiguration(
 ### Objective-C 
 
 ```Objectivec
+#import <IMQACrash/IMQACrash.h>
+
+NSError* custom_error = [NSError errorWithDomain:@"custom_error" code:404 userInfo:NULL];
+[IMQACrash notifyError:custom_error];
 ```
 
 ### Swift 
 
 ```swift 
+import IMQACrash
+
+let custom_error = NSError(domain: "custom error", code: 404, userInfo: nil)
+IMQACrash.notifyError(custom_error)
 ```
 
 </br>

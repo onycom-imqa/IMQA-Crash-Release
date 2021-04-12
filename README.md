@@ -41,6 +41,7 @@ pod 'IMQACrashAgent', '~> 3.1.0'
 
 ### Objective-C 
 
+#### AppDelegate.m
 ```Objectivec
 
 #import <IMQACrashAgent/IMQACrash.h>

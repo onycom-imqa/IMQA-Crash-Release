@@ -5,8 +5,6 @@ IMQA Crash 을 iOS 프로젝트에 추가하면, Objective-C 및 Swift 로 개�
 > **iOS SDK 문의** </br>
 > 이메일 : ybcha@onycom.com
 
-</br>
-
 ### 시스템 요구사항 
 
 * iOS XX 이상 

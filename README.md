@@ -7,8 +7,8 @@ IMQA Crash 을 iOS 프로젝트에 추가하면, Objective-C 및 Swift 로 개�
 
 ### 시스템 요구사항 
 
-* iOS XX 이상 
-* Xcode XX 이상 
+* iOS 9 이상 (권장) / iOS 8도 지원은 하고 있으나, 데이터 수집이 원활하지 않을 수 있음.  
+* Xcode 12 이상 
 
 ---
 
@@ -18,7 +18,7 @@ IMQA Crash SDK는 2가지 방식으로 SDK를 설치 방법을 제공하고 있�
 
 ### XCFrameworks 
 
-[프레임워크 다운로드]() 
+[프레임워크 다운로드](https://github.com/onycom-imqa/IMQA-Crash-Release/releases/download/v3.1.1/IMQACrashAgent.zip) 
 
 위 링크를 통해 프레임워크를 다운로드 후, Targets > [Project Name] > General > Frameworks, Libraries, and Embedded Content 로 옮겨주세요.
 
@@ -27,7 +27,7 @@ IMQA Crash SDK는 2가지 방식으로 SDK를 설치 방법을 제공하고 있�
 Podfile 에 다음과 같이 추가 후 `pod install`를 터미널에서 실행해주세요. 
 ```Podfile 
 
-pod 'IMQACrashAgent', '~> 3.1.0'
+pod 'IMQACrashAgent', '~> 3.1.1'
 
 ```
 
@@ -142,4 +142,14 @@ IMQACrash.notifyError(custom_error)
 4. Remote Config
 
 원하시는 Crash 솔루션 기능이 있으신 경우에 ybcha@onycom.com으로 많은 의견 부탁드립니다. 
+
+
+## 6. FAQ
+
+### Error : CocoaPods could not find compatible versions for pod ""
+
+최신 Pod Repo가 업데이트 되지 않은 문제입니다. 아래와 같이 진행해주시면 정상적으로 설치가 됩니다. 
+```sh
+pod install --repo-update
+```
 

@@ -58,7 +58,23 @@ pod 'IMQACrashAgent', '~> 3.1.0'
 
 ### Swift 
 
+#### <project_name>-bridging-header.h
+```objectivec 
+
+#import <IMQACrashAgent/IMQACrash.h>
+
+```
+
+#### AppDelegate.swift
 ```swift 
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+    let PROJECT_KEY = ""
+    let config = IMQACrashConfiguration(PROJECT_KEY)
+    IMQACrash.start(with: config)
+    
+    return true
+}
 ```
 
 </br>

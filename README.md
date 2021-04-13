@@ -92,8 +92,8 @@ NSString* imqaUrl = @"https://custom-url";
 IMQACrashConfiguration* crashConfig = [[IMQACrashConfiguration alloc] initWithApiKey:PROJECT_KEY];
 
 IMQACrashEndpointConfiguration* endpoint = [[IMQACrashEndpointConfiguration alloc] init]; 
-endpoint.notify = imqaUrl + @"/cocoa/crash/send";
-endpoint.sessions = imqaUrl + @"/cocoa/session"; 
+endpoint.notify = [imqaUrl stringByAppendingString:@"/cocoa/crash/send"];
+endpoint.sessions = [imqaUrl stringByAppendingString:@"/cocoa/session"];
 crashConfig.endpoints = endpoint;
 ```
 

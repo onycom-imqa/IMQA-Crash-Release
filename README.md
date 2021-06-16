@@ -28,7 +28,7 @@ Podfile 에 다음과 같이 추가 후 `pod install`를 터미널에서 실행�
 
 ```Podfile
 
-pod 'IMQACrashAgent', '~> 3.1.6'
+pod 'IMQACrashAgent', '~> 3.1.7'
 
 ```
 

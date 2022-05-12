@@ -18,7 +18,7 @@ IMQA Crash SDK는 2가지 방식으로 SDK를 설치 방법을 제공하고 있�
 
 ### XCFrameworks
 
-[프레임워크 다운로드](https://github.com/onycom-imqa/IMQA-Crash-Release/releases/download/v3.1.6/IMQACrashAgent.zip)
+[프레임워크 다운로드](https://github.com/onycom-imqa/IMQA-Crash-Release/releases/download/v3.5.0/IMQACrashAgent.zip)
 
 위 링크를 통해 프레임워크를 다운로드 후, Targets > [Project Name] > General > Frameworks, Libraries, and Embedded Content 로 옮겨주세요.
 
@@ -28,7 +28,7 @@ Podfile 에 다음과 같이 추가 후 `pod install`를 터미널에서 실행�
 
 ```Podfile
 
-pod 'IMQACrashAgent', '~> 3.3.1'
+pod 'IMQACrashAgent', '~> 3.5.0'
 
 ```
 

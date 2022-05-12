@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IMQACrashAgent'
-  version            = 'IMQAVERSION'
+  version            = '3.4.0'
   s.version          = version
   s.summary          = 'Crash Report SDK for iOS by IMQA'
 
